@@ -470,7 +470,7 @@ def search():
         listVideos(urlMain+"/WiSearch?v1="+search_string)
 
 
-def addToQueue(id):
+def addToQueue(id):content = opener.open("http://movies.netflix.com/Login").read()
     opener.open("http://movies.netflix.com/AddToQueue?movieid="+id+"&authURL="+auth)
 
 
